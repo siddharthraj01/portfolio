@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(img/bg.png);
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+
+.logo {
+  max-height: 60px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fd4766;
+}
+
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+.my-image {
+  display: block;
+  width: 381px;
+  height: auto;
+  margin: 140px auto;
+  margin-right: 202px;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  transform: rotateY(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+
+.content .title {
+  color: #0a0a0a;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content h1 {
+  color: #1f1f25;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
+}
+
+.content h1 span {
+  color: #fd4766;
+}
+
+.content p {
+  width: 55%;
+  color: #202020;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+#portfolio {
+  background-image: url('https://www.exascaleproject.org/wp-content/uploads/2019/11/PathForward-scaled-1024x756.jpg');
+  padding: 80px 0;
+  background-color: #f8f8f8;
+}
+
+#portfolio h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  position: relative;
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.project-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+
+.project:hover .project-details {
+  transform: translateY(0);
+}
+
+.project-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  font-size: 14px;
+}
+
+#skills {
+  background-image: url('https://hub.packtpub.com/wp-content/uploads/2018/03/skill-up-blog_App-Dev-696x334.png');
+  padding: 80px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+#skills h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#skills li {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+#hobbies {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+#hobbies h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+#hobbies ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#hobbies li {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #1d1d24;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 14px;
+}
